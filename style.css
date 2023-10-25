@@ -1,0 +1,136 @@
+/*
+Theme Name: Custom child theme
+Description: A child theme to create the new blog page. Replace the "Template" in your parent theme.
+Template: parent-theme
+Version: 1.0
+*/
+
+/*Page blog*/
+.new-container {
+  margin: 10px 30px;
+}
+header .new-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .nav-menu {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+header .nav-menu ul {
+  list-style: none;
+  display: flex;
+  margin: auto;
+  padding: 0;
+}
+header .nav-menu a {
+  padding: 5px 15px;
+  text-decoration: none;
+}
+header .custom-logo-link img {
+  height: auto;
+  max-width: 86px;
+  margin: 0 10px;
+}
+#mobile-menu-icon {
+  display: none;
+  width: 50px;
+  height: 50px;
+}
+
+@media only screen and (max-width: 1300px) {
+  .new-container {
+    margin: 10px 20px;
+  }
+  header .nav-menu {
+    font-size: 14px;
+  }
+  header .custom-logo-link img {
+    max-width: 70px;
+  }
+  header .nav-menu a {
+    padding: 5px 10px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .new-container {
+    margin: 10px;
+  }
+  header .nav-menu {
+    display: none;
+  }
+  #mobile-menu-icon {
+    display: block;
+  }
+
+  header .custom-logo-link {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/*Hero*/
+.blog-hero {
+  margin: 20px 150px;
+}
+.blog-hero--container {
+  display: flex;
+}
+.blog-hero--column {
+  width: 49%;
+  padding-right: 1%;
+}
+.blog-hero--title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  color: #6C63FF;
+  text-transform: uppercase;
+}
+.blog-hero--content {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 27px;
+}
+.blog-hero--image {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1300px) {
+  .blog-hero {
+    margin: 20px 60px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .blog-hero {
+    margin: 20px 0;
+  }
+  .blog-hero--container {
+    display: block;
+  }
+  .blog-hero--column {
+    width: 100%;
+    padding-right: 0;
+  }
+}
+
+/*Blog post*/
+.blog-post {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+}
+.blog-post--title {
+  font-weight: bold;
+}
+.blog-post a {
+  text-decoration: none;
+  font-weight: bold;
+}
+.blog-pagination a {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #6C63FF;
+}
