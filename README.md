@@ -4,7 +4,7 @@ This a blog listing page template that pulls in WordPress posts’ content.
 
 For an easy test, the files can be contained in a folder as a theme child.
 
-## Aclarations
+## Clarifications
 
 * The **hero** section uses the page title, content and featured image.
 
